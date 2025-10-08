@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import {useState } from "react";
 
 
-export default function updateLanding() {
+export default function UpdateLanding() {
   let [landingData, setLandingData] = useState({
     title: "",
     subtext: "",

@@ -1,7 +1,7 @@
 import CountOverviw from "./CountOverviw";
 import QuickActions from "./QuickActions";
 
-export default function adminDashboard() {
+export default function AdminDashboard() {
   return (
     <div className=" pt-6 w-[screen-255px] flex sm:justify-between flex-col sm:flex-row items-center">
            <CountOverviw/>

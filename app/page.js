@@ -1,9 +1,10 @@
+import LandingPage from "./(root)/website/landing-page/page";
 
 
 export default function Home() {
   return (
     <div>
-      home page
+      <LandingPage/>
     </div>
   );
 }

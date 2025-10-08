@@ -1,4 +1,4 @@
-export default function updateAbout(){
+export default function UpdateAbout(){
     return(
        <div>
         updateAbout
