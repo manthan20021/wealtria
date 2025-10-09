@@ -1,34 +1,35 @@
 import Link from "next/link";
 import Charts from "./Charts";
+import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
+
 
 
 export default function CountOverviw(){
     return(
         <div>
-
-            <div className="sm:w-[803.19px] w-screen grid sm:grid-cols-3 grid-cols-1 gap-5">
+            <div className="sm:w-[803.19px] w-[300px] grid sm:grid-cols-3 grid-cols-1 gap-5">
             <Link href="">
-            <div className="sm:w-[251.73px]  w-full rounded-md p-4 h-[121.6px] bg-gray-100 ">
-                <p className="text-4 font-semibold">Total Users</p>
-                <h4 className="text-[30px] font-bold">2050</h4>
-                <span className="text-[14px] text-[#22c55e]">10%</span>
-            </div>
+            <Card className="sm:w-[251.73px]  w-full rounded-md p-4">
+                 <CardTitle className="text-4 font-semibold">Total Users</CardTitle>
+                 <CardContent className="text-[30px] font-bold">2042</CardContent>
+                 <CardFooter className="text-[14px] text-[#22c55e]">10%</CardFooter>
+            </Card>
             </Link>
 
             <Link href="">
-            <div className="sm:w-[251.73px] w-full rounded-md p-4 h-[121.6px] bg-gray-100 ">
-                <p className="text-4 font-semibold">Active Users</p>
-                <h4 className="text-[30px] font-bold">1000</h4>
-                <span className="text-[14px] text-[#22c55e]">10%</span>
-            </div>
+           <Card className="sm:w-[251.73px]  w-full rounded-md p-4 ">
+                 <CardTitle className="text-4 font-semibold">Total Users</CardTitle>
+                 <CardContent className="text-[30px] font-bold">2042</CardContent>
+                 <CardFooter className="text-[14px] text-[#22c55e]"><span >10%</span></CardFooter>
+            </Card>
             </Link>
 
             <Link href="">
-            <div className="sm:w-[251.73px] w-full rounded-md p-4 h-[121.6px] bg-gray-100 ">
-                <p className="text-4 font-semibold">Conversion Rate</p>
-                <h4 className="text-[30px] font-bold">20%</h4>
-                <span className="text-[14px] text-[#22c55e]">10%</span>
-            </div>
+            <Card className="sm:w-[251.73px]  w-full rounded-md p-4 ">
+                 <CardTitle className="text-4 font-semibold">Total Users</CardTitle>
+                 <CardContent className="text-[30px] font-bold">2042</CardContent>
+                 <CardFooter className="text-[14px] text-[#22c55e]"><span >10%</span></CardFooter>
+            </Card>
             </Link>
 
         </div>
