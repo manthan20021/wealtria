@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/components/ThemeProvider";
+import Header from "./(root)/website/Header";
 
 
 
@@ -27,10 +28,11 @@ export default function RootLayout({ children }) {
       >
          <ThemeProvider
             attribute="class"
-            defaultTheme="System"
+            defaultTheme="Light"
             enableSystem
             disableTransitionOnChange
           >
+              <Header/>
           {children}
           </ThemeProvider>
       </body>
