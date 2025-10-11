@@ -5,6 +5,9 @@ import Header from "./(root)/website/Header";
 
 
 
+
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -14,6 +17,8 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+
 
 export const metadata = {
   title: "Create Next App",
@@ -29,7 +34,7 @@ export default function RootLayout({ children }) {
          <ThemeProvider
             attribute="class"
             defaultTheme="Light"
-            enableSystem
+            enableSystem={false}
             disableTransitionOnChange
           >
               <Header/>

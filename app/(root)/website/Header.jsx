@@ -1,13 +1,18 @@
+// import { Button } from '@/components/ui/button'
 import React from 'react'
-import { ModeToggle } from "@/components/ModeToggle";
-import { NavbarDemo } from "@/components/NavbarDemo";
-import { Button } from '@/components/ui/button';
+// import { NavbarDemo } from './NavbarDemo'
+// import { ModeToggle } from '@/components/ModeToggle'
+
+import { NavbarDemo } from "@/components/Application/websit/NavbarDemo"
+import { ModeToggle } from "@/components/ModeToggle"
+import { Button } from "@/components/ui/button"
+
 
 const Header = () => {
   return (
-    <div className='w-full  h-20 hidden sticky top-0 md:flex items-center justify-between px-2.5 '>
+    <div className='w-screen  h-20 hidden sticky z-50 top-0 sm:flex items-center justify-between lg:px-[98px] md:px-[20px] '>
 
-      <Button className="bg-[#B33BEF]">LOGO</Button>
+      <Button className="bg-[#6F39C5]">LOGO</Button>
       <NavbarDemo/>
       <ModeToggle/>
       <Button className="ml-4 ">Account</Button>
