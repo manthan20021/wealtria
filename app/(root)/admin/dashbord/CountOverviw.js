@@ -2,39 +2,30 @@ import Link from "next/link";
 import Charts from "./Charts";
 import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
 
-
-
-export default function CountOverviw(){
-    return(
-        <div>
-            <div className="sm:w-[803.19px] w-[300px] grid sm:grid-cols-3 grid-cols-1 gap-5">
-            <Link href="">
-            <Card className="sm:w-[251.73px]  w-full rounded-md p-4">
-                 <CardTitle className="text-4 font-semibold">Total Users</CardTitle>
-                 <CardContent className="text-[30px] font-bold">2042</CardContent>
-                 <CardFooter className="text-[14px] text-[#22c55e]">10%</CardFooter>
+export default function CountOverviw() {
+  return (
+    <div className="w-full flex flex-col items-center">
+      {/* Stats cards */}
+      <div className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {[1, 2, 3].map((_, index) => (
+          <Link key={index} href="">
+            <Card className="w-full rounded-md p-4 hover:shadow-md transition-shadow">
+              <CardTitle className="text-base sm:text-lg font-semibold">
+                Total Users
+              </CardTitle>
+              <CardContent className="text-2xl sm:text-3xl font-bold">
+                2042
+              </CardContent>
+              <CardFooter className="text-sm text-[#22c55e]">+10%</CardFooter>
             </Card>
-            </Link>
+          </Link>
+        ))}
+      </div>
 
-            <Link href="">
-           <Card className="sm:w-[251.73px]  w-full rounded-md p-4 ">
-                 <CardTitle className="text-4 font-semibold">Total Users</CardTitle>
-                 <CardContent className="text-[30px] font-bold">2042</CardContent>
-                 <CardFooter className="text-[14px] text-[#22c55e]"><span >10%</span></CardFooter>
-            </Card>
-            </Link>
-
-            <Link href="">
-            <Card className="sm:w-[251.73px]  w-full rounded-md p-4 ">
-                 <CardTitle className="text-4 font-semibold">Total Users</CardTitle>
-                 <CardContent className="text-[30px] font-bold">2042</CardContent>
-                 <CardFooter className="text-[14px] text-[#22c55e]"><span >10%</span></CardFooter>
-            </Card>
-            </Link>
-
-        </div>
-
-        <Charts/>
-        </div>
-    )
+      {/* Charts Section */}
+      <div className="w-full mt-8">
+        <Charts />
+      </div>
+    </div>
+  );
 }
