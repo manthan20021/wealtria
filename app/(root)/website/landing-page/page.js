@@ -25,13 +25,13 @@ export default function LandingPage() {
           <h1
             className={`${raleway.className} dark:text-white text-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl lg:leading-17 font-light`}
           >
-            Take Control of Your Financial Future with
+            Take Control of Your Financial Future with 
           </h1>
 
           <h1
             className={`${raleway.className} bg-clip-text lg:leading-25  text-transparent dark:bg-gradient-to-b from-neutral-600 to-white bg-black text-5xl sm:text-6xl md:text-7xl lg:text-[120px] font-bold tracking-tight mt-2`}
           >
-            wealtria.
+            wealtria
           </h1>
 
           {/* Subtext */}

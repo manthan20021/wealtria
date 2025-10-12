@@ -4,11 +4,11 @@ const landigPageUpdateSchema = new mongoose.Schema({
 
     title:{
         type:String,
-        requir:true
+        require:true
     },
     subtext:{
         type:String,
-        requir:true
+        require:true
     },
     avtar:{
         type:String,

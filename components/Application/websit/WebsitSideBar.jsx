@@ -10,6 +10,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 import { WebsitSidebarManuData } from '@/lib/WebsitSidebarManuData'
+import { ModeToggle } from '@/components/ModeToggle'
 
 
 
@@ -21,8 +22,9 @@ const WebsitSideBar = () => {
 <SidebarTrigger/>
       </aside>
      <Sidebar>
-      <SidebarHeader>
+         <SidebarHeader className='w-full border-2 flex flex-row items-center justify-between '>
         <h1>LOGO</h1>
+         <ModeToggle/>
       </SidebarHeader>
       <SidebarContent>
         <SidebarMenu>
@@ -35,6 +37,7 @@ const WebsitSideBar = () => {
             </a>
            </SidebarMenuButton>
           </SidebarMenuItem>
+          
         ))}
         </SidebarMenu>
       </SidebarContent>
