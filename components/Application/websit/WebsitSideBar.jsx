@@ -7,20 +7,26 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  SidebarTrigger,
 } from "@/components/ui/sidebar"
-import { adminSidebarManu } from '@/lib/WebsitSidebarManuData'
+import { WebsitSidebarManuData } from '@/lib/WebsitSidebarManuData'
 
 
 
-const AppSidebar = () => {
+
+const WebsitSideBar = () => {
   return (
+     <aside className="sm:hidden block">
+      <aside className='p-2 rounded-md hover:bg-gray-200 fixed top-2 left-2 z-50'>
+<SidebarTrigger/>
+      </aside>
      <Sidebar>
       <SidebarHeader>
         <h1>LOGO</h1>
       </SidebarHeader>
       <SidebarContent>
         <SidebarMenu>
-          {adminSidebarManu.map((menu, index) => ( 
+          {WebsitSidebarManuData.map((menu, index) => ( 
           <SidebarMenuItem key={index}>
            <SidebarMenuButton asChild>
              <a href={menu.url}>
@@ -33,7 +39,8 @@ const AppSidebar = () => {
         </SidebarMenu>
       </SidebarContent>
     </Sidebar>
+    </aside>
   )
 }
 
-export default AppSidebar
+export default WebsitSideBar

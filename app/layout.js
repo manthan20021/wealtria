@@ -2,8 +2,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/components/ThemeProvider";
 import Header from "./(root)/website/Header";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import AppSidebar from "@/components/Application/admin/AppSidebar";
+import { SidebarProvider } from "@/components/ui/sidebar";
+import WebsitSideBar from "@/components/Application/websit/WebsitSideBar";
+
 
 
 
@@ -40,9 +41,9 @@ export default function RootLayout({ children }) {
             disableTransitionOnChange
           >
               <Header/>
-               <SidebarProvider>
-                <SidebarTrigger/>
-              <AppSidebar/>
+              <SidebarProvider >
+              <WebsitSideBar/> 
+              
           {children}
           </SidebarProvider>
           </ThemeProvider>
