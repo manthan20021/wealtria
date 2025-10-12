@@ -4,9 +4,9 @@ import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
 
 export default function CountOverviw() {
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center justify-center">
       {/* Stats cards */}
-      <div className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <Card className="w-full bg-transparent border-transparent grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {[1, 2, 3].map((_, index) => (
           <Link key={index} href="">
             <Card className="w-full rounded-md p-4 hover:shadow-md transition-shadow">
@@ -20,12 +20,11 @@ export default function CountOverviw() {
             </Card>
           </Link>
         ))}
-      </div>
+      </Card>
 
       {/* Charts Section */}
-      <div className="w-full mt-8">
         <Charts />
-      </div>
+      
     </div>
   );
 }
