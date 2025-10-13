@@ -1,6 +1,5 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { useTheme } from "next-themes";
 import { Raleway } from "next/font/google";
 
@@ -11,34 +10,33 @@ const raleway = Raleway({
 });
 
 export default function LandingPage() {
-  const { theme } = useTheme();
-  const words =
-    "We help India’s middle class grow their wealth, protect their assets, and achieve financial freedom.";
+  const { theme } = useTheme();  
 
   return (
     <div className="w-screen flex flex-col items-center">
       {/* Hero Section */}
-      <div className="w-full max-w-[1200px] px-5 py-10 flex flex-col-reverse lg:flex-row items-start justify-between gap-10">
+      <div className="w-full max-w-[1300px] px-5 py-10 flex flex-col-reverse lg:flex-row items-start justify-between gap-10">
         {/* Text Section */}
         <div className="w-full lg:w-[60%] flex flex-col sm:items-center md:items-start text-center lg:text-left">
           {/* Heading */}
           <h1
-            className={`${raleway.className} dark:text-white text-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl lg:leading-17 font-light`}
+            className={`${raleway.className} dark:text-white text-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl  font-light`}
           >
-            Take Control of Your Financial Future with 
+            Take Control of Your Financial Future with
           </h1>
 
           <h1
-            className={`${raleway.className} bg-clip-text lg:leading-25  text-transparent dark:bg-gradient-to-b from-neutral-600 to-white bg-black text-5xl sm:text-6xl md:text-7xl lg:text-[120px] font-bold tracking-tight mt-2`}
+            className={`${raleway.className} bg-clip-text h-[60px] sm:h-[150px] text-transparent dark:bg-gradient-to-b from-neutral-600 to-white bg-black text-5xl sm:text-6xl md:text-7xl lg:text-[120px] font-bold tracking-tight mt-2`}
           >
-            wealtria
+              MultipleGains.
           </h1>
 
           {/* Subtext */}
-          <TextGenerateEffect
-            className="mt-6 md:mt-10 text-base sm:text-lg md:text-xl lg:leading-6"
-            words={words}
-          />
+          <p
+            className="text-base sm:text-lg md:text-xl"
+          >
+            Wehelp India’s middle class grow their wealth, protect their assets, and achieve financial freedom.
+            </p>
 
           {/* Button and Link */}
           <div className="w-full flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start mt-8 gap-5">

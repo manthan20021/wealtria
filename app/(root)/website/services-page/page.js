@@ -1,6 +1,9 @@
 import { ThreeDCardDemo } from "@/components/Application/websit/servises/ThreeDCardDemo";
+import { ServicesData } from "@/lib/serviseData";
 
 export default function Services() {
+
+  const serviceData = ServicesData
   return (
     <section className="w-full min-h-screen flex flex-col items-center justify-center bg-background px-4 sm:px-6 md:px-10 lg:px-16 py-16">
       {/* Container */}
@@ -28,12 +31,11 @@ export default function Services() {
             justify-items-center
           "
         >
-          <ThreeDCardDemo />
-          <ThreeDCardDemo />
-          <ThreeDCardDemo />
-          <ThreeDCardDemo />
-          <ThreeDCardDemo />
-          <ThreeDCardDemo />
+          {
+            serviceData.map((data, index) => (
+              <ThreeDCardDemo key={index} servicedata={data} />
+            ))
+          }
         </div>
       </div>
     </section>

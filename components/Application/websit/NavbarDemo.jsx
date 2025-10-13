@@ -25,13 +25,13 @@ function Navbar({ className }) {
         <MenuItem setActive={setActive} active={active} item="Menu">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/">Home</HoveredLink>
-            <HoveredLink href="">About</HoveredLink>
+            <HoveredLink href="/website/about-page">About</HoveredLink>
             <HoveredLink href="/">Contact</HoveredLink>
           </div>
         </MenuItem>
 
         <MenuItem setActive={setActive} active={active} item="About">
-          <HoveredLink href="" className="text-sm">
+          <HoveredLink href="/website/about-page" className="text-sm">
             <Card className="bg-transparent border-none flex flex-row items-center w-[300px] justify-between">
               <img
                 className="rounded-full h-[90px] w-[90px]"
