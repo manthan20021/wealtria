@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 import { Raleway } from "next/font/google";
+import Link from "next/link";
 
 // 🔹 Font definition
 const raleway = Raleway({
@@ -39,14 +40,21 @@ export default function LandingPage() {
             </p>
 
           {/* Button and Link */}
-          <div className="w-full flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start mt-8 gap-5">
+          <div className="w-full flex flex-col sm:flex-row items-center sm:items-center justify-center sm:justify-start mt-8 gap-5">
             <Button className="bg-[#6F39C5] rounded-full px-8 py-6 text-base sm:text-lg">
               Explore
             </Button>
 
-            <Button className="rounded-full px-8 py-6 text-base sm:text-lg">
-              Check your financial health
-            </Button>
+          <Link
+      href="/website/helt-chekup-tool"
+      className="relative inline-flex items-center justify-center rounded-full font-bold px-8 py-6 text-base sm:text-lg"
+    >
+      Financial Checkup
+      {/* Animated arrow line */}
+      <span className="absolute right-0-0 bottom-[2px] w-full h-[3px] bg-gradient-to-r from-green-600 to-transparent animate-moveLine rounded-full overflow-hidden" />
+    </Link>
+
+
             
               
           </div>
