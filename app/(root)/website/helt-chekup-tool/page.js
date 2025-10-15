@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import Head from "next/head";
+import Link from "next/link";
 
 
 export default function FinancesHelthCekup() {
@@ -82,7 +83,7 @@ export default function FinancesHelthCekup() {
   return (
     <div  className="mt-3.5 w-full h-auto flex items-center justify-center" >
       <section>
-        <div className="lg:w-[1000px] w-full max-h-screen dark:border-white/[0.2] border-black/[0.1] " >
+        <div className="lg:w-[1000px] w-full  max-h-screen dark:border-white/[0.2] border-black/[0.1] " >
           {/* Step 1 */}
           {step === 1 && (
             <motion.div
@@ -118,7 +119,7 @@ export default function FinancesHelthCekup() {
               </div>
 
               <Button
-                className="w-full mt-8 navy-gradient  hover:opacity-90 text-lg py-6"
+                className="w-full bg-[#6F39C5] text-white mt-8 navy-gradient  hover:opacity-90 text-lg py-6"
                 onClick={() => setStep(2)}
               >
                 Start Your Checkup <ArrowRight className="ml-2 w-5 h-5" />
@@ -134,7 +135,7 @@ export default function FinancesHelthCekup() {
               className="border-2 rounded-xl shadow-lg p-8"
             >
               <h2 className="text-3xl font-bold mb-8 text-center">
-                Tell Us About Your Finances
+                Tell Us About Your <span className="text-[#6F39C5]">Finances</span>
               </h2>
               <form onSubmit={handleSubmit} className="space-y-8">
                 {[
@@ -189,10 +190,10 @@ export default function FinancesHelthCekup() {
                 </div>
 
                 <div className="flex space-x-4">
-                  <Button variant="outline" className="flex-1" onClick={() => setStep(1)}>
+                  <Button variant="outline" className="flex-1 border-2" onClick={() => setStep(1)}>
                     Back
                   </Button>
-                  <Button type="submit" className="flex-1 navy-gradient  hover:opacity-90">
+                  <Button type="submit" className="flex-1 navy-gradient bg-[#6F39C5] text-white  hover:opacity-90">
                     Calculate My Score
                   </Button>
                 </div>
@@ -207,9 +208,9 @@ export default function FinancesHelthCekup() {
               animate={{ opacity: 1, y: 0 }}
               className="space-y-8"
             >
-              <div className=" border-2 rounded-xl shadow-lg p-8 text-center">
+              <div className=" border-2 rounded-xl shadow-lg  p-8  text-center">
                 <h2 className="text-3xl font-bold mb-6">
-                  Your Financial Health Score
+                  Your Financial <span className="text-[#6F39C5]">Health Score</span>
                 </h2>
                 <div className="relative w-48 h-48 mx-auto mb-6">
                   <svg className="transform -rotate-90 w-48 h-48">
@@ -252,29 +253,22 @@ export default function FinancesHelthCekup() {
                 </div>
               </div>
 
-              <div className=" border-2 rounded-xl shadow-lg p-8 text-center">
+              <div className=" border-2 rounded-xl shadow-lg p-8 text-center ">
                 <h3 className="text-2xl font-bold mb-4">Ready to Improve Your Financial Health?</h3>
                 <p className=" mb-6">
                   Book a free consultation with our expert financial advisors to create a
                   personalized plan.
                 </p>
+                <Link href="/website/contact-form">
                 <Button
                   size="lg"
-                  className="gold-gradient hover:opacity-90"
-                  onClick={() =>
-                    toast({
-                      title:
-                        "🚧 This feature isn't implemented yet — request it in your next prompt!",
-                      duration: 3000,
-                    })
-                  }
+                  className="gold-gradient hover:opacity-90 bg-[#6F39C5] text-white mr-5"
                 >
                   Book Free Consultation
                 </Button>
-              </div>
+                </Link>
 
-              <div className="text-center ">
-                <Button
+                <Button className="border-2"
                   variant="outline"
                   onClick={() => {
                     setStep(1);
@@ -284,6 +278,7 @@ export default function FinancesHelthCekup() {
                   Start New Checkup
                 </Button>
               </div>
+
             </motion.div>
           )}
         </div>

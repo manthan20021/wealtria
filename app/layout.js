@@ -1,12 +1,10 @@
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/components/ThemeProvider";
 import Header from "./(root)/website/Header";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import WebsitSideBar from "@/components/Application/websit/WebsitSideBar";
-
-
-
 
 
 
@@ -29,12 +27,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <body 
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-         <ThemeProvider
+          <ThemeProvider
             attribute="class"
             defaultTheme="Light"
             enableSystem={false}
@@ -47,6 +46,7 @@ export default function RootLayout({ children }) {
           {children}
           </SidebarProvider>
           </ThemeProvider>
+        
       </body>
     </html>
   );

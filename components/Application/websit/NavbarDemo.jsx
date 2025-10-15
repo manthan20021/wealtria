@@ -26,7 +26,7 @@ function Navbar({ className }) {
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/">Home</HoveredLink>
             <HoveredLink href="/website/about-page">About</HoveredLink>
-            <HoveredLink href="/">Contact</HoveredLink>
+            <HoveredLink href="/website/contact-form">Contact</HoveredLink>
           </div>
         </MenuItem>
 
@@ -39,8 +39,7 @@ function Navbar({ className }) {
                 alt=""
               />
               <p>
-                Lorem ipsum dolor sit amet.
-                Lorem ipsum dolor sit amet. Learn More..
+                MultipleGains is a modern personal finance brand built to help everyday Indians create real wealth with smart choices LearnMore..
               </p>
             </Card>
           </HoveredLink>
@@ -49,16 +48,16 @@ function Navbar({ className }) {
         <MenuItem setActive={setActive} active={active} item="Blogs">
           <div className="text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
-              title="Blog Title"
-              href="https://algochurn.com"
+              title="The Compounding"
+              href="/website/blog-page"
               src="https://assets.aceternity.com/demos/algochurn.webp"
-              description="Blogs in one line: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, itaque sint."
+              description="The 8th Wonder That Can Make You Crorepati. . . ."
             />
             <ProductItem
-              title="Blog Title"
-              href="https://tailwindmasterkit.com"
+              title="How the Rich Think"
+              href="/website/blog-page"
               src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-              description="Blogs in one line: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, itaque sint."
+              description="Have you ever wondered why some people seem to attract money easily — while others struggle all their life, even after working harder. . . ."
             />
           </div>
         </MenuItem>
@@ -66,28 +65,28 @@ function Navbar({ className }) {
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
-              title="Services Title"
+              title="Insurance & Protection"
               href="/website/services-page"
-              src="https://assets.aceternity.com/demos/algochurn.webp"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing"
+              src="/ser-insurance-protection.jpeg"
+              description="Safeguard your family’s future with tailored life insurance plans"
             />
             <ProductItem
-              title="Services Title"
+              title="Mutual Funds & Investments"
               href="/website/services-page"
-              src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing"
+              src="/ser-mutual-funds.jpeg"
+              description="Grow your wealth systematically with our expert investment strategies."
             />
             <ProductItem
-              title="Services Title"
+              title="Personal Financial"
               href="/website/services-page"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing"
+              src="/ser-personal-financial-planning.jpeg"
+              description="Customized financial roadmap to help you achieve short-term and longterm goals"
             />
             <ProductItem
-              title="Services Title"
+              title="Tax Planning & Savings"
               href="/website/services-page"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing"
+              src="/ser-tax-planning.jpeg"
+              description="Maximize your savings legally and minimize your tax liabilities."
             />
           </div>
         </MenuItem>

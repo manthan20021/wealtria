@@ -1,6 +1,6 @@
 "use client";
-
 import { WobbleCard } from "@/components/ui/wobble-card";
+import Link from "next/link";
 import React from "react";
 
 
@@ -8,18 +8,25 @@ export function WobbleCardDemo() {
   return (
     <div
       className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
-      <WobbleCard
+
+       <WobbleCard
         containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
         className="">
-        <div className="max-w-xs">
+        <div className="max-w-xs relative z-10">
           <h2
             className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            All About Cryptocurrency
+            How the Rich Think About Money
           </h2>
           <p className="mt-4 text-left  text-base/6 text-neutral-200">
-            With over 100,000 mothly active bot users, Gippity AI is the most
-            popular AI platform for developers.
+           Have you ever wondered why some people seem to attract money easily — while others struggle all their life, even after working harder. . . .
           </p>
+
+            <a
+      href="https://liveastepahead.blogspot.com/2025/10/how-rich-think-about-money-and-what.html"
+      className="inline-block mt-6 px-6 py-3 bg-white text-[#A60952] font-bold rounded-lg hover:bg-neutral-200 transition"
+    >
+      Learn More
+    </a>
         </div>
         <img
           src="https://tse2.mm.bing.net/th/id/OIP.MXIflMiXLZ9Cj_9ukGeYFQHaE7?pid=Api&P=0&h=180"
@@ -27,36 +34,46 @@ export function WobbleCardDemo() {
           height={500}
           alt="linear demo image"
           className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl" />
+          
       </WobbleCard>
+
       <WobbleCard containerClassName="col-span-1 min-h-[300px]">
+         <div className="max-w-sm relative z-10">
         <h2
           className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-          No shirt, no shoes, no weapons.
+         The Power of Compounding.
         </h2>
         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-          If someone yells “stop!”, goes limp, or taps out, the fight is over.
+          The 8th Wonder That Can Make You Crorepati. . . .
         </p>
+        <a
+      href="https://liveastepahead.blogspot.com/2025/10/power-of-compounding-8th-wonder-that.html"
+      className="inline-block mt-6 px-6 py-3 bg-white text-[#4F43B6] font-bold rounded-lg hover:bg-neutral-200 transition"
+    >
+      Learn More
+    </a>
+    </div>
       </WobbleCard>
+
       <WobbleCard
         containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
-        <div className="max-w-sm">
+        <div className="max-w-sm relative z-10">
           <h2
             className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            Signup for blazing-fast cutting-edge state of the art Gippity AI
-            wrapper today!
+            Your Salary Can Make You Rich — If You Stop Doing These 5 Mistakes.
           </h2>
           <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-            With over 100,000 mothly active bot users, Gippity AI is the most
-            popular AI platform for developers.
+            You work hard. You give your time, your energy, your peace — all for that one SMS at the end of the month
           </p>
+          <a
+      href="https://liveastepahead.blogspot.com/2025/10/your-salary-can-make-you-rich-if-you.html"
+      className="inline-block mt-6 px-6 py-3 bg-white text-[#314C99] font-bold rounded-lg hover:bg-neutral-200 transition"
+    >
+      Learn More
+    </a>
         </div>
-        <img
-          src="/"
-          width={500}
-          height={500}
-          alt="linear demo image"
-          className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl" />
       </WobbleCard>
+       
     </div>
   );
 }

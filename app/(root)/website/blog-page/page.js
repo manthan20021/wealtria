@@ -9,7 +9,7 @@ export default function BlogPage(){
           <div className="sm:w-[1200px] w-full sm:px-2 px-10 py-20">
               <h2
                 className="max-w-7xl pl-4 mb-12  text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-                Get to know your iSad.
+                Blogs
               </h2>
               <WobbleCardDemo/>
             </div>
