@@ -14,7 +14,7 @@ export default function InputGroupDemo() {
             Contact Us
           </CardTitle>
           <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">
-            We'd love to hear from you! Fill out the form and we'll get back to you soon.
+          Fill out the form and we'll get back to you soon.
           </p>
         </CardHeader>
 
