@@ -1,4 +1,5 @@
 import { Raleway } from "next/font/google";
+import Image from "next/image";
 
 const raleway = Raleway({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
@@ -9,7 +10,7 @@ export default function About() {
         
         {/* Image Section */}
         <div className="w-full lg:w-[35%] flex justify-center lg:justify-start">
-          <img
+          <Image
             src="https://static.vecteezy.com/system/resources/previews/023/850/968/non_2x/business-man-pose-folding-arms-free-png.png"
             alt="Business Man"
             className="w-[220px] sm:w-[280px] md:w-[320px] lg:w-[380px] h-auto object-contain"

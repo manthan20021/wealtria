@@ -3,6 +3,7 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
+import Image from "next/image";
 
 export function ThreeDCardDemo({servicedata}) {
   const {title, url, discption} = servicedata
@@ -22,7 +23,7 @@ export function ThreeDCardDemo({servicedata}) {
          {discption}
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
-          <img
+          <Image
             src={url}
             height="1000"
             width="1000"

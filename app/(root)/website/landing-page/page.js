@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 import { Raleway } from "next/font/google";
+import Image from "next/image";
 import Link from "next/link";
 
 // 🔹 Font definition
@@ -66,14 +67,14 @@ export default function LandingPage() {
         {/* Image Section */}
         <div className="w-full lg:w-[40%] flex justify-center">
           {theme === "light" && (
-            <img
+            <image
               src="/heroLight.png"
               alt="Hero Light"
               className="w-[90%] sm:w-[70%] md:w-[80%] lg:w-full h-auto object-contain"
             />
           )}
           {theme === "dark" && (
-            <img
+            <Image
               src="/heroDark.png"
               alt="Hero Dark"
               className="w-[90%] sm:w-[70%] md:w-[80%] lg:w-full h-auto object-contain"

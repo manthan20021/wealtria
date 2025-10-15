@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { HoveredLink, MenuItem, Menu, ProductItem } from "@/components/ui/navbar-menu";
 import { Card } from "@/components/ui/card";
+import Image from "next/image";
 
 export function NavbarDemo() {
   return (
@@ -33,7 +34,7 @@ function Navbar({ className }) {
         <MenuItem setActive={setActive} active={active} item="About">
           <HoveredLink href="/website/about-page" className="text-sm">
             <Card className="bg-transparent border-none flex flex-row items-center w-[300px] justify-between">
-              <img
+              <Image
                 className="rounded-full h-[90px] w-[90px]"
                 src="https://tse2.mm.bing.net/th/id/OIP.YblZ-BGB5US6ZfrUJpnnRQHaFL?pid=Api&P=0&h=180"
                 alt=""

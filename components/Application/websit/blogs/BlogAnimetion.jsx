@@ -1,5 +1,6 @@
 "use client";
 import { WobbleCard } from "@/components/ui/wobble-card";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -28,7 +29,7 @@ export function WobbleCardDemo() {
       Learn More
     </a>
         </div>
-        <img
+        <Image
           src="https://tse2.mm.bing.net/th/id/OIP.MXIflMiXLZ9Cj_9ukGeYFQHaE7?pid=Api&P=0&h=180"
           width={500}
           height={500}
