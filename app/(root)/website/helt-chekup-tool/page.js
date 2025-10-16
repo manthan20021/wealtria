@@ -53,11 +53,13 @@ export default function FinancesHelthCekup() {
   const getScoreColor = (score) =>
     score >= 80 ? "text-green-600" : score >= 60 ? "text-yellow-600" : "text-red-600";
 
+
   const getScoreMessage = (score) => {
-    if (score >= 80) return "Excellent! Your financial health is strong.";
-    if (score >= 60) return "Good! There's room for improvement.";
-    return "Needs Attention! Let's work on improving your finances.";
-  };
+  if (score >= 80) return "Excellent! Your financial health is strong.";
+  if (score >= 60) return "Good! There&apos;s room for improvement.";
+  return "Needs Attention! Let&apos;s work on improving your finances.";
+};
+
 
   const getRecommendations = (score) => {
     const recs = [];
@@ -71,7 +73,7 @@ export default function FinancesHelthCekup() {
     if (!formData.hasInsurance)
       recs.push("Get adequate life and health insurance coverage immediately");
     if (!formData.hasEmergencyFund)
-      recs.push("Build an emergency fund covering 6-12 months of expenses");
+      recs.push("Build an emergency fund covering 6&ndash;12 months of expenses");
 
     if (recs.length === 0) {
       recs.push("Continue maintaining your excellent financial habits!");
@@ -107,9 +109,9 @@ export default function FinancesHelthCekup() {
 
               <div className="space-y-6 w-full">
                 {[
-                  "Quick & Easy – Takes only 2-3 minutes",
-                  "AI-Powered Analysis – Advanced algorithms analyze your situation",
-                  "Personalized Recommendations – Get tailored advice instantly",
+                  "Quick & Easy &ndash; Takes only 2-3 minutes",
+                  "AI-Powered Analysis &ndash; Advanced algorithms analyze your situation",
+                  "Personalized Recommendations &ndash; Get tailored advice instantly",
                 ].map((item, i) => (
                   <div key={i} className="flex border-2 items-start space-x-3 p-4 rounded-lg">
                     <CheckCircle className="w-6 h-6 " />
@@ -138,8 +140,7 @@ export default function FinancesHelthCekup() {
                 Tell Us About Your <span className="text-[#6F39C5]">Finances</span>
               </h2>
               <form onSubmit={handleSubmit} className="space-y-8">
-                {[
-                  ["Your Age", "age", 18, 70, 1, "years"],
+                {[["Your Age", "age", 18, 70, 1, "years"],
                   ["Annual Income", "income", 100000, 10000000, 50000, "₹"],
                   ["Total Savings", "savings", 0, 5000000, 10000, "₹"],
                   ["Current Investments", "investments", 0, 5000000, 10000, "₹"],
@@ -185,7 +186,7 @@ export default function FinancesHelthCekup() {
                       }
                       className="w-5 h-5"
                     />
-                    <p>I have an emergency fund (6–12 months)</p>
+                    <p>I have an emergency fund (6&ndash;12 months)</p>
                   </div>
                 </div>
 

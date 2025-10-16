@@ -8,7 +8,6 @@ export default function About() {
     <div className="w-full flex justify-center bg-[#330778] py-20 px-4">
       <div className="w-full max-w-[1200px] flex flex-col lg:flex-row items-center justify-between gap-12">
         
-        {/* Image Section */}
         <div className="w-full lg:w-[35%] flex justify-center lg:justify-start">
           <Image
             src="/heroLight.png"
@@ -20,7 +19,6 @@ export default function About() {
           />
         </div>
 
-        {/* Text Section */}
         <div className="w-full lg:w-[60%] text-white">
           <h1
             className={`${raleway.className} text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6`}
@@ -34,7 +32,7 @@ export default function About() {
 
           <p className="text-sm sm:text-base md:text-lg leading-relaxed mb-5">
             Founded three years ago, we currently manage an Assets Under Management (AUM) of over ₹50 lakh and proudly serve 100+ satisfied clients across India.
-            Our journey started with a simple belief — that financial freedom should not be limited to a few, but accessible to everyone who earns, saves, and dreams big.
+            Our journey started with a simple belief &mdash; that financial freedom should not be limited to a few, but accessible to everyone who earns, saves, and dreams big.
           </p>
 
           <p className="text-sm sm:text-base md:text-lg leading-relaxed mb-5">
@@ -43,11 +41,11 @@ export default function About() {
           </p>
 
           <p className="text-sm sm:text-base md:text-lg leading-relaxed mb-5">
-            Our vision is vast — to build India’s most reliable financial ecosystem where millions can learn, invest, and achieve their financial goals with ease.
+            Our vision is vast &mdash; to build India&apos;s most reliable financial ecosystem where millions can learn, invest, and achieve their financial goals with ease.
           </p>
 
           <p className="text-sm sm:text-base md:text-lg leading-relaxed">
-            We don’t just manage money — we help you multiply your gains.
+            We don&apos;t just manage money &mdash; we help you multiply your gains.
           </p>
         </div>
       </div>

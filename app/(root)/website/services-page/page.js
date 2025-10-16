@@ -13,9 +13,6 @@ export default function Services() {
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
             We Are <span className="text-[#6F39C5]">Serving.</span>
           </h1>
-          <p className="mt-3 text-gray-600 dark:text-gray-300 text-sm sm:text-base md:text-lg max-w-xl mx-auto">
-            Add your service section description here — something short and clear about what you offer.
-          </p>
         </div>
 
         {/* Card Section */}

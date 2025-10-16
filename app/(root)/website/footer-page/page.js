@@ -45,11 +45,11 @@ export default function FooterPage(){
     {/* Right section (Services) */}
     <div className="text-white flex flex-col gap-3 text-center md:text-left">
       <h2 className="font-semibold text-lg mb-2 text-gray-300">Our Services</h2>
-      <Link href="/website/contact-form" className="hover:text-gray-400 transition">Life Insurance & Protection</Link>
-      <Link href="/website/contact-form" className="hover:text-gray-400 transition">Mutual Funds & Investments</Link>
-      <Link href="/website/contact-form" className="hover:text-gray-400 transition">Health & Critical Illness Insurance</Link>
-      <Link href="/website/contact-form" className="hover:text-gray-400 transition">Loans & Credit Solutions</Link>
-      <Link href="/website/contact-form" className="hover:text-gray-400 transition">Tax Planning & Savings</Link>
+      <Link href="/website/contact-form" className="hover:text-gray-400 transition">Life Insurance &amp; Protection</Link>
+      <Link href="/website/contact-form" className="hover:text-gray-400 transition">Mutual Funds &amp; Investments</Link>
+      <Link href="/website/contact-form" className="hover:text-gray-400 transition">Health &amp; Critical Illness Insurance</Link>
+      <Link href="/website/contact-form" className="hover:text-gray-400 transition">Loans &amp; Credit Solutions</Link>
+      <Link href="/website/contact-form" className="hover:text-gray-400 transition">Tax Planning &amp; Savings</Link>
       <Link href="/website/contact-form" className="hover:text-gray-400 transition">Personal Financial Planning</Link>
     </div>
   </div>
@@ -57,7 +57,7 @@ export default function FooterPage(){
   {/* bottom */}
   <div className="w-full border-t border-gray-700 pt-5 flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-3">
     <p className="text-sm sm:text-base text-gray-400 text-center sm:text-left">
-      © 2025 MultipleGains. All rights reserved.
+       © 2025 MultipleGains. All rights reserved.
     </p>
     <p className="text-sm sm:text-base text-gray-400 text-center sm:text-left">
       Developed by <span className="text-white font-medium">Manthan</span>.

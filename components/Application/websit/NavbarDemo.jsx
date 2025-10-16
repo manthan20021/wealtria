@@ -41,17 +41,17 @@ function Navbar({ className }) {
             <Card className="bg-transparent border-none flex flex-row items-center w-[300px] justify-between">
               <Image
                 className="rounded-full h-[90px] w-[90px]"
-                src=""
+                src="/heroLight.png"
                 alt="MultipleGains brand image"
                 width={90}
                 height={90}
                 priority
               />
               <p>
-                MultipleGains is a modern personal finance brand built to help
-                everyday Indians create real wealth with smart choices Learn
-                More..
-              </p>
+  MultipleGains is a modern personal finance brand built to 
+  help everyday Indians create real wealth with smart choices. Learn More&aposs..
+</p>
+
             </Card>
           </HoveredLink>
         </MenuItem>
@@ -61,13 +61,13 @@ function Navbar({ className }) {
             <ProductItem
               title="The Compounding"
               href="/website/blog-page"
-              src=""
+              src="/blog1.png"
               description="The 8th Wonder That Can Make You Crorepati. . . ."
             />
             <ProductItem
               title="How the Rich Think"
               href="/website/blog-page"
-              src=""
+              src="/blog2.png"
               description="Have you ever wondered why some people seem to attract money easily — while others struggle all their life, even after working harder. . . ."
             />
           </div>

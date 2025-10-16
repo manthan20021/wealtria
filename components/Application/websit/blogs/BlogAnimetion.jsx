@@ -1,6 +1,5 @@
 "use client";
 import { WobbleCard } from "@/components/ui/wobble-card";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -19,25 +18,16 @@ export function WobbleCardDemo() {
             How the Rich Think About Money
           </h2>
           <p className="mt-4 text-left text-base/6 text-neutral-200">
-            Have you ever wondered why some people seem to attract money easily — while others struggle all their life, even after working harder. . . .
+            Have you ever wondered why some people seem to attract money easily &mdash; while others struggle all their life, even after working harder. . . .
           </p>
 
-          <a
+          <Link
             href="https://liveastepahead.blogspot.com/2025/10/how-rich-think-about-money-and-what.html"
             className="inline-block mt-6 px-6 py-3 bg-white text-[#A60952] font-bold rounded-lg hover:bg-neutral-200 transition"
           >
             Learn More
-          </a>
+          </Link>
         </div>
-
-        <Image
-          src="/heroDark.png"
-          alt="linear demo image"
-          width={500}
-          height={500}
-          className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-          priority
-        />
       </WobbleCard>
 
       <WobbleCard containerClassName="col-span-1 min-h-[300px]">
@@ -50,12 +40,12 @@ export function WobbleCardDemo() {
           <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
             The 8th Wonder That Can Make You Crorepati. . . .
           </p>
-          <a
+          <Link
             href="https://liveastepahead.blogspot.com/2025/10/power-of-compounding-8th-wonder-that.html"
             className="inline-block mt-6 px-6 py-3 bg-white text-[#4F43B6] font-bold rounded-lg hover:bg-neutral-200 transition"
           >
             Learn More
-          </a>
+          </Link>
         </div>
       </WobbleCard>
 
@@ -66,17 +56,17 @@ export function WobbleCardDemo() {
           <h2
             className="max-w-sm md:max-w-lg text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white"
           >
-            Your Salary Can Make You Rich — If You Stop Doing These 5 Mistakes.
+            Your Salary Can Make You Rich &mdash; If You Stop Doing These 5 Mistakes.
           </h2>
           <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
-            You work hard. You give your time, your energy, your peace — all for that one SMS at the end of the month
+            You work hard. You give your time, your energy, your peace &mdash; all for that one SMS at the end of the month
           </p>
-          <a
+          <Link
             href="https://liveastepahead.blogspot.com/2025/10/your-salary-can-make-you-rich-if-you.html"
             className="inline-block mt-6 px-6 py-3 bg-white text-[#314C99] font-bold rounded-lg hover:bg-neutral-200 transition"
           >
             Learn More
-          </a>
+          </Link>
         </div>
       </WobbleCard>
 

@@ -35,7 +35,7 @@ export default function LandingPage() {
 
           {/* Subtext */}
           <p className="text-base sm:text-lg md:text-xl">
-            Wehelp India’s middle class grow their wealth, protect their assets, and achieve financial freedom.
+            We help India&apos;s middle class grow their wealth, protect their assets, and achieve financial freedom.
           </p>
 
           {/* Button and Link */}
