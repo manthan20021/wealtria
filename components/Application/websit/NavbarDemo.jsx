@@ -1,7 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
-import { HoveredLink, MenuItem, Menu, ProductItem } from "@/components/ui/navbar-menu";
+import {
+  HoveredLink,
+  MenuItem,
+  Menu,
+  ProductItem,
+} from "@/components/ui/navbar-menu";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
 
@@ -36,11 +41,16 @@ function Navbar({ className }) {
             <Card className="bg-transparent border-none flex flex-row items-center w-[300px] justify-between">
               <Image
                 className="rounded-full h-[90px] w-[90px]"
-                src="https://tse2.mm.bing.net/th/id/OIP.YblZ-BGB5US6ZfrUJpnnRQHaFL?pid=Api&P=0&h=180"
-                alt=""
+                src=""
+                alt="MultipleGains brand image"
+                width={90}
+                height={90}
+                priority
               />
               <p>
-                MultipleGains is a modern personal finance brand built to help everyday Indians create real wealth with smart choices LearnMore..
+                MultipleGains is a modern personal finance brand built to help
+                everyday Indians create real wealth with smart choices Learn
+                More..
               </p>
             </Card>
           </HoveredLink>
@@ -51,13 +61,13 @@ function Navbar({ className }) {
             <ProductItem
               title="The Compounding"
               href="/website/blog-page"
-              src="https://assets.aceternity.com/demos/algochurn.webp"
+              src=""
               description="The 8th Wonder That Can Make You Crorepati. . . ."
             />
             <ProductItem
               title="How the Rich Think"
               href="/website/blog-page"
-              src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
+              src=""
               description="Have you ever wondered why some people seem to attract money easily — while others struggle all their life, even after working harder. . . ."
             />
           </div>

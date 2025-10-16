@@ -11,9 +11,12 @@ export default function About() {
         {/* Image Section */}
         <div className="w-full lg:w-[35%] flex justify-center lg:justify-start">
           <Image
-            src="https://static.vecteezy.com/system/resources/previews/023/850/968/non_2x/business-man-pose-folding-arms-free-png.png"
+            src="/heroLight.png"
             alt="Business Man"
+            width={380}
+            height={380}
             className="w-[220px] sm:w-[280px] md:w-[320px] lg:w-[380px] h-auto object-contain"
+            priority
           />
         </div>
 
