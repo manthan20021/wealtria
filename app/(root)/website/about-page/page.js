@@ -5,21 +5,21 @@ const raleway = Raleway({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
 export default function About() {
   return (
-    <div className="w-full flex justify-center bg-[#330778] py-20 px-4">
+    <div className="w-full flex justify-center bg-[#3E3B73] py-20 px-4">
       <div className="w-full max-w-[1200px] flex flex-col lg:flex-row items-center justify-between gap-12">
         
-        <div className="w-full lg:w-[35%] flex justify-center lg:justify-start">
+        <div className="w-full flex justify-center lg:justify-start">
           <Image
-            src="/heroLight.png"
+            src="/about2.png"
             alt="Business Man"
-            width={380}
-            height={380}
-            className="w-[220px] sm:w-[280px] md:w-[320px] lg:w-[380px] h-auto object-contain"
+            width={580}
+            height={580}
+            className="sm:w-[280px] md:w-[320px] lg:w-[580px] lg:h-[500px] object-contain"
             priority
           />
         </div>
 
-        <div className="w-full lg:w-[60%] text-white">
+        <div className="w-full  text-white">
           <h1
             className={`${raleway.className} text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6`}
           >

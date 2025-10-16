@@ -263,13 +263,13 @@ export default function FinancesHelthCekup() {
                 <Link href="/website/contact-form">
                 <Button
                   size="lg"
-                  className="gold-gradient hover:opacity-90 bg-[#6F39C5] text-white mr-5"
+                  className="gold-gradient hover:opacity-90 bg-[#6F39C5] text-white sm:mr-5"
                 >
                   Book Free Consultation
                 </Button>
                 </Link>
 
-                <Button className="border-2"
+                <Button className="border-2 mt-5"
                   variant="outline"
                   onClick={() => {
                     setStep(1);

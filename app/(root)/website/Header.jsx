@@ -6,6 +6,7 @@ import React from 'react'
 import { NavbarDemo } from "@/components/Application/websit/NavbarDemo"
 import { ModeToggle } from "@/components/ModeToggle"
 import { Button } from "@/components/ui/button"
+import Link from 'next/link'
 
 
 const Header = () => {
@@ -15,7 +16,9 @@ const Header = () => {
       <Button className="bg-[#6F39C5]">LOGO</Button>
       <NavbarDemo/>
       <ModeToggle/>
-      <Button className="ml-4 ">Account</Button>
+      <Link href="/website/contact-form">
+      <Button className="ml-4 bg-[#6F39C5] text-white">Contact</Button>
+      </Link>
     </div>
   )
 }
