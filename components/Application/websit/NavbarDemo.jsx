@@ -41,7 +41,7 @@ function Navbar({ className }) {
             <Card className="bg-transparent border-none flex flex-row items-center w-[300px] justify-between">
               <Image
                 className="rounded-full h-[90px] w-[90px]"
-                src="/heroLight.png"
+                src="/heroL.png"
                 alt="MultipleGains brand image"
                 width={90}
                 height={90}
