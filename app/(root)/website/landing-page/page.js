@@ -61,7 +61,7 @@ export default function LandingPage() {
         <div className="w-full lg:w-[40%] flex justify-center">
           {theme === "light" && (
             <Image
-              src="/heroLight.png"
+              src="/heroL.png"
               alt="Hero Light"
               width={600}
               height={600}
@@ -71,7 +71,7 @@ export default function LandingPage() {
           )}
           {theme === "dark" && (
             <Image
-              src="/heroDark.png"
+              src="/heroB.png"
               alt="Hero Dark"
               width={600}
               height={600}

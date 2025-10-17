@@ -49,7 +49,7 @@ function Navbar({ className }) {
               />
               <p>
   MultipleGains is a modern personal finance brand built to 
-  help everyday Indians create real wealth with smart choices. Learn More&aposs..
+  help everyday Indians create real wealth with smart choices.Learn More.
 </p>
 
             </Card>
