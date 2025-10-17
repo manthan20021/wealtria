@@ -35,11 +35,11 @@ export default function FooterPage(){
     <div className="text-white flex flex-col gap-3 text-center md:text-left">
       <h2 className="font-semibold text-lg mb-2 text-gray-300">Quick Links</h2>
       <Link href="/" className="hover:text-gray-400 transition">Home</Link>
-      <Link href="/" className="hover:text-gray-400 transition">About</Link>
-      <Link href="/" className="hover:text-gray-400 transition">Services</Link>
-      <Link href="/" className="hover:text-gray-400 transition">Blogs</Link>
-      <Link href="/" className="hover:text-gray-400 transition">Contact</Link>
-      <Link href="/" className="hover:text-gray-400 transition">Financial Checkup</Link>
+      <Link href="/website/about-page" className="hover:text-gray-400 transition">About</Link>
+      <Link href="/website/services-page" className="hover:text-gray-400 transition">Services</Link>
+      <Link href="/website/blog-page" className="hover:text-gray-400 transition">Blogs</Link>
+      <Link href="/website/contact-form" className="hover:text-gray-400 transition">Contact</Link>
+      <Link href="/website/helt-chekup-tool" className="hover:text-gray-400 transition">Financial Checkup</Link>
     </div>
 
     {/* Right section (Services) */}

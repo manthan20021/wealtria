@@ -59,24 +59,22 @@ export default function LandingPage() {
 
         {/* Image Section */}
         <div className="w-full lg:w-[40%] flex justify-center">
-          {theme === "light" && (
+          {theme == "light" && (
             <Image
               src="/heroL.png"
               alt="Hero Light"
               width={600}
               height={600}
               className="w-[90%] sm:w-[70%] md:w-[80%] lg:w-full h-auto object-contain"
-              priority
             />
           )}
-          {theme === "dark" && (
+          {theme == "dark" && (
             <Image
               src="/heroB.png"
-              alt="Hero Dark"
+              alt="Heroimg"
               width={600}
               height={600}
               className="w-[90%] sm:w-[70%] md:w-[80%] lg:w-full h-auto object-contain"
-              priority
             />
           )}
         </div>
