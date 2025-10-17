@@ -12,7 +12,7 @@ export default function InputGroupDemo() {
   const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID;
   const templateIDOwner = process.env.NEXT_PUBLIC_TEMPLATE_OWNER;
   const templateIDUser = process.env.NEXT_PUBLIC_TEMPLATE_USER;
-  const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+  const publicKey = process.env.NEXT_PUBLIC_KEY;
 
   const [formData, setFormData] = useState({
     name: "",
