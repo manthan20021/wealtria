@@ -12,16 +12,19 @@ import Image from 'next/image'
 
 const Header = () => {
   return (
-    <div className='w-screen h-20 hidden sticky z-50 top-0 sm:flex items-center justify-between lg:px-[98px] md:px-[20px] '>
+    <div className='w-screen h-20 hidden sticky z-50 top-0 sm:flex items-center bg-[#FFFFFF] dark:bg-[#0A0A0A] justify-between lg:px-[98px] md:px-[20px] '>
 
       <div className='h-full flex justify-between items-center'>
         <Image
        alt="logoimg"
-        width={40}
-        height={40}
+        width={50}
+        height={50}
       src="/logo.png"
       />
-      <h1 className='font-semibold text-2xl ml-1'>MultipleGains</h1>
+      <div className='w-full flex flex-col items-start justify-center'>
+        <h1 className='font-semibold text-2xl'>MultipleGains</h1>
+      <p className='text-[9px]'>Think Big. Invest Smart. Gain Multiple.</p>
+      </div>
       </div>
       <NavbarDemo/>
       <ModeToggle/>

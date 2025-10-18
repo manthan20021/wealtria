@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/sidebar"
 import { WebsitSidebarManuData } from '@/lib/WebsitSidebarManuData'
 import { ModeToggle } from '@/components/ModeToggle'
+import Image from 'next/image'
 
 
 
@@ -23,7 +24,18 @@ const WebsitSideBar = () => {
       </aside>
      <Sidebar>
          <SidebarHeader className='w-full border-2 flex flex-row items-center justify-between '>
-        <h1>LOGO</h1>
+        <div className='h-full flex justify-between items-center'>
+                <Image
+               alt="logoimg"
+                width={40}
+                height={40}
+              src="/logo.png"
+              />
+              <div className='w-full flex flex-col items-start justify-center'>
+              <h1 className='font-semibold text-md'>MultipleGains</h1>
+              <p className='text-[9px]'>Think Big. Invest Smart. Gain Multiple.</p>
+              </div>
+              </div>
          <ModeToggle/>
       </SidebarHeader>
       <SidebarContent>

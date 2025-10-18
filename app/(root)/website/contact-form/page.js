@@ -17,6 +17,7 @@ export default function InputGroupDemo() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     message: "",
   });
 
@@ -34,6 +35,7 @@ export default function InputGroupDemo() {
       await emailjs.send(serviceID, templateIDOwner, {
         from_name: formData.name,
         from_email: formData.email,
+        from_phone: formData.phone,
         message: formData.message,
       }, publicKey);
 
@@ -44,7 +46,7 @@ export default function InputGroupDemo() {
       }, publicKey);
 
       alert("✅ Message sent successfully!");
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({ name: "", email: "", phone:"", message: "" });
     } catch (error) {
       console.error("❌ Email send failed:", error);
       alert("❌ Something went wrong. Try again later!");
@@ -97,8 +99,21 @@ export default function InputGroupDemo() {
               </div>
             </div>
 
+            
             {/* Right Column */}
             <div className="flex flex-col gap-6">
+              <div className="grid gap-2">
+                <Label htmlFor="message">Phone</Label>
+                <Input
+                  id="phone"
+                  name="phone"
+                  type="number"
+                  placeholder="Your phone"  
+                  value={formData.phone}
+                  onChange={handleChange}
+                />
+              </div>
+
               <div className="grid gap-2">
                 <Label htmlFor="message">Message</Label>
                 <Textarea
@@ -111,6 +126,7 @@ export default function InputGroupDemo() {
                   rows={8}
                 />
               </div>
+              
               <div className="flex justify-end">
                 <Button
                   type="submit"
